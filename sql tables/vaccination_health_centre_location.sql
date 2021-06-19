@@ -1,0 +1,111 @@
+create table health_centre_location
+(
+    h_id      int         not null,
+    latitude  float(6, 3) not null,
+    longitude float(6, 3) not null,
+    primary key (h_id, latitude, longitude),
+    constraint health_centre_location_ibfk_1
+        foreign key (h_id) references health_care_centre (h_id)
+            on update cascade on delete cascade
+);
+
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (1, 0.945, -77.653);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (2, -26.508, 31.371);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (3, -6.467, 108.235);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (4, -7.343, 112.676);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (5, -23.299, -45.966);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (6, 48.927, 2.331);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (7, 10.533, 122.833);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (8, 51.757, 20.918);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (9, 53.3, -6.263);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (10, 31.696, 115.431);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (11, 10.187, 4.723);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (12, 39.947, 127.871);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (13, 50.116, 101.587);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (14, 41.165, -7.785);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (15, -2.914, -79.816);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (16, 32.137, 35.186);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (17, -7.523, 108.051);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (18, 59.937, 10.716);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (19, -8.225, 112.578);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (20, -25.294, -57.579);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (21, 32.744, 74.275);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (22, 40.795, 114.887);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (23, 57.526, 13.343);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (24, 55.83, 37.446);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (25, 56.296, 14.859);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (26, 5.444, 73.366);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (27, -7.974, 112.671);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (28, 30.137, 113.509);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (29, 0.348, 32.583);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (30, -25.696, 28.702);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (31, 8.909, 125.401);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (32, -8.642, 120.456);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (33, 9.753, 105.29);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (34, 37.818, -25.669);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (35, 25.571, 111.946);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (36, 24.072, 120.562);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (37, -6.239, 106.789);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (38, 28.11, 107.269);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (39, 59.925, 10.82);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (40, 56.677, 96.079);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (41, 14.276, -90.769);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (42, 32.501, 119.196);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (43, 30.013, 31.209);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (44, -17.552, -149.558);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (45, 43.043, 1.904);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (46, -29.622, -50.534);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (47, 33.347, 120.164);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (48, 27.623, 113.855);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (49, -8.195, 123.799);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (50, 23.098, 113.254);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (51, 54.695, 20.504);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (52, 6.737, 7.001);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (53, -8.599, 115.24);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (54, 30.707, 120.422);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (55, 38.649, -8.949);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (56, 13.699, 123.518);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (57, -14, -73.933);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (58, 6.468, 124.806);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (59, -8.823, 121.937);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (60, 34.954, 135.752);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (61, 11.165, -4.305);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (62, -33.52, -56.904);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (63, 37.513, 122.12);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (64, 43.226, 45.389);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (65, 36.76, 100.35);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (66, 39.827, 122.099);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (67, 48.881, 2.148);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (68, 27.724, 100.789);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (69, -8.021, -77.729);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (70, -22.601, -45.168);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (71, 39.66, -104.84);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (72, 31.934, 118.67);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (73, 38.409, -82.361);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (74, -16.395, -71.537);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (75, 48.614, 2.474);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (76, 7.039, 126.45);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (77, 40.578, 44.7);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (78, 16.268, -61.527);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (79, 40.59, 46.327);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (80, -6.231, -77.955);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (81, 16.107, 108.252);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (82, 39.639, 110.606);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (83, 52.139, 16.892);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (84, 45.902, 13.88);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (85, 52.223, 6.737);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (86, 29.276, 110.79);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (87, 49.38, -82.4);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (88, -6.493, 106.881);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (89, 46.752, 33.368);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (90, 30.016, 73.219);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (91, 56.025, 37.427);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (92, 57.658, 12.117);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (93, 35.581, 104.611);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (94, 1.303, 101.026);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (95, 54.756, 38.887);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (96, 9.442, 123.237);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (97, -7.818, -34.927);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (98, 22.518, 113.393);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (99, 58.594, 49.663);
+INSERT INTO vaccination.health_centre_location (h_id, latitude, longitude) VALUES (100, 50.785, 16.164);
